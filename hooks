@@ -1,0 +1,21 @@
+# 动机（Motivation）
+存在一些问题  
+* 状态组件不能进行很好的共享
+* 函数式组件中不能使用状态
+```
+// 组件中不能存储状态
+function One (props) {
+    return <p>{props.name}</p>
+}
+```
+React倡导的组件编写原则中有一条：  
+**有状态的不渲染，有渲染的无状态**
+* 组件嵌套层级很深（Nested hell）
+（操蛋的有道插入图片要收费。）
+# 语法（Syntax）
+```
+const [something, setSomething] = usePattern(initialState)
+```
+
+# 案例（Compare）
+# 原理分析（Core）
